@@ -17,12 +17,10 @@ class Body1Text extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MediaQuery(
-      data:  MediaQuery.of(context).copyWith(textScaleFactor: 1),
+      data: MediaQuery.of(context).copyWith(textScaleFactor: 1),
       child: Text(
         text ?? '',
-        style: Theme.of(context).textTheme.bodyText2.copyWith(
-          color: textColor
-        ),
+        style: Theme.of(context).textTheme.bodyText2.copyWith(color: textColor),
         maxLines: maxLine,
       ),
     );
@@ -46,19 +44,15 @@ class Body2Text extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MediaQuery(
-      data:  MediaQuery.of(context).copyWith(textScaleFactor: 1),
+      data: MediaQuery.of(context).copyWith(textScaleFactor: 1),
       child: Text(
         text ?? '',
-        style: Theme.of(context).textTheme.bodyText1.copyWith(
-            color: textColor,
-            fontWeight: FontWeight.bold
-        ),
+        style: Theme.of(context).textTheme.bodyText1.copyWith(color: textColor, fontWeight: FontWeight.bold),
         maxLines: maxLine,
       ),
     );
   }
 }
-
 
 class SubTitleText extends StatelessWidget {
   final String text;
@@ -77,13 +71,10 @@ class SubTitleText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MediaQuery(
-      data:  MediaQuery.of(context).copyWith(textScaleFactor: 1),
+      data: MediaQuery.of(context).copyWith(textScaleFactor: 1),
       child: Text(
         text ?? '',
-        style: Theme.of(context).textTheme.subtitle2.copyWith(
-            color: textColor,
-            fontWeight: FontWeight.w500
-        ),
+        style: Theme.of(context).textTheme.subtitle2.copyWith(color: textColor, fontWeight: FontWeight.w500),
         maxLines: maxLine,
       ),
     );
@@ -107,13 +98,10 @@ class TitleText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MediaQuery(
-      data:  MediaQuery.of(context).copyWith(textScaleFactor: 1),
+      data: MediaQuery.of(context).copyWith(textScaleFactor: 1),
       child: Text(
         text ?? '',
-        style: Theme.of(context).textTheme.title.copyWith(
-            color: textColor,
-            fontWeight: FontWeight.w500
-        ),
+        style: Theme.of(context).textTheme.titleMedium.copyWith(color: textColor, fontWeight: FontWeight.w500),
         maxLines: maxLine,
       ),
     );
