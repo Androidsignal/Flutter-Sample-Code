@@ -110,7 +110,7 @@ class TitleText extends StatelessWidget {
       data:  MediaQuery.of(context).copyWith(textScaleFactor: 1),
       child: Text(
         text ?? '',
-        style: Theme.of(context).textTheme.title.copyWith(
+        style: Theme.of(context).textTheme?titleMedium.copyWith(
             color: textColor,
             fontWeight: FontWeight.w500
         ),
